@@ -2,6 +2,29 @@ import streamlit as st
 
 st.set_page_config(page_title="Student Eligibility Dashboard", page_icon="🎓", layout="centered")
 
+st.markdown(
+    """
+    <style>
+    div.stButton > button[kind="primary"] {
+        background-color: #1E88E5;
+        border-color: #1E88E5;
+        color: white;
+    }
+    div.stButton > button[kind="primary"]:hover {
+        background-color: #1565C0;
+        border-color: #1565C0;
+        color: white;
+    }
+    div.stButton > button[kind="primary"]:active {
+        background-color: #0D47A1;
+        border-color: #0D47A1;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.title("🎓 Student Eligibility Dashboard")
 st.write("Check your eligibility for the mid exam, final exam, and course certificate.")
 
